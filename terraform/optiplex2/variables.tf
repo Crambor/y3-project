@@ -3,6 +3,12 @@ variable "pm_user" {
   type        = string
 }
 
+variable "pm_realm" {
+  description = "Proxmox login realm"
+  type        = string
+  default     = "pve"
+}
+
 variable "pm_pass" {
   description = "Proxmox Password"
   type        = string
@@ -13,4 +19,10 @@ variable "proxmox_api_url" {
   description = "Proxmox API url"
   type        = string
   default     = "https://10.10.10.13:8006/api2/json"
+}
+
+variable "enable_slurm" {
+  description = "toggle to trigger slurm VMS"
+  type        = bool
+  default     = false
 }
