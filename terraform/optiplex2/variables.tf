@@ -26,3 +26,15 @@ variable "enable_slurm" {
   type        = bool
   default     = false
 }
+
+variable "ci_user" {
+  description = "Cloud-init user"
+  type        = string
+  default     = "crambor"
+}
+
+variable "ci_pass" {
+  description = "cloud-init user password"
+  type        = string
+  sensitive   = true
+}
