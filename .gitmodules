@@ -1,0 +1,3 @@
+[submodule "benchmarking/benchmarking/dev-files/caddy-middleware-stuff/caddy-custom"]
+	path = benchmarking/benchmarking/dev-files/caddy-middleware-stuff/caddy-custom
+	url = https://github.com/Crambor/caddy-custom.git

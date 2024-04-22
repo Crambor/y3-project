@@ -1,0 +1,41 @@
+127.0.0.1       localhost localhost.local localhost4 localhost4.local
+10.10.10.18     storage     storage.local truenas       truenas.local
+10.10.10.100    login         login.local
+
+# slurm rocky9 
+10.10.10.50     cn01           cn01.local
+10.10.10.51     cn02           cn02.local
+10.10.10.52     cn03           cn03.local
+10.10.10.53     cn04           cn04.local
+10.10.10.54     cn05           cn05.local
+10.10.10.55     cn06           cn06.local
+10.10.10.56     cn07           cn07.local
+10.10.10.57     cn08           cn08.local
+10.10.10.58     cn09           cn09.local
+10.10.10.59     cn10           cn10.local
+
+# slurm ubuntu24.04
+10.10.10.70     ubuntu-cn01            ubuntu-cn01.local
+10.10.10.71     ubuntu-cn02            ubuntu-cn02.local
+10.10.10.72     ubuntu-cn03            ubuntu-cn03.local
+10.10.10.73     ubuntu-cn04            ubuntu-cn04.local
+10.10.10.74     ubuntu-cn05            ubuntu-cn05.local
+10.10.10.75     ubuntu-cn06            ubuntu-cn06.local
+10.10.10.76     ubuntu-cn07            ubuntu-cn07.local
+10.10.10.77     ubuntu-cn08            ubuntu-cn08.local
+10.10.10.78     ubuntu-cn09            ubuntu-cn09.local
+10.10.10.79     ubuntu-cn10            ubuntu-cn10.local
+10.10.10.80     ubuntu-login           ubuntu-login.local
+
+# PBS rocky9
+10.10.10.80     pbs-cn01            pbs-cn01.local
+10.10.10.81     pbs-cn02            pbs-cn02.local
+10.10.10.82     pbs-cn03            pbs-cn03.local
+10.10.10.83     pbs-cn04            pbs-cn04.local
+10.10.10.84     pbs-cn05            pbs-cn05.local
+10.10.10.85     pbs-cn06            pbs-cn06.local
+10.10.10.86     pbs-cn07            pbs-cn07.local
+10.10.10.87     pbs-cn08            pbs-cn08.local
+10.10.10.88     pbs-cn09            pbs-cn09.local
+10.10.10.89     pbs-cn10            pbs-cn10.local
+10.10.10.90     pbs-login           pbs-login.local

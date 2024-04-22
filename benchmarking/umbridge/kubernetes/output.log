@@ -1,0 +1,40 @@
+deployment.apps/model-deployment configured
+Applied configuration with 10 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 36.41s
+deployment.apps/model-deployment configured
+Applied configuration with 9 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 33.08s
+deployment.apps/model-deployment configured
+Applied configuration with 8 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 32.25s
+deployment.apps/model-deployment configured
+Applied configuration with 7 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 31.58s
+deployment.apps/model-deployment configured
+Applied configuration with 6 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 31.73s
+deployment.apps/model-deployment configured
+Applied configuration with 5 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 36.83s
+deployment.apps/model-deployment configured
+Applied configuration with 4 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 41.74s
+deployment.apps/model-deployment configured
+Applied configuration with 3 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 53.14s
+deployment.apps/model-deployment configured
+Applied configuration with 2 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 75.51s
+deployment.apps/model-deployment configured
+Applied configuration with 1 replicas
+Connecting to host URL http://10.10.10.129:31379
+done in 148.05s

@@ -1,0 +1,12 @@
+:8080 {
+	reverse_proxy {
+		to cn01:4243 cn02:4243
+		lb_policy least_conn
+		lb_retries 2
+
+		health_uri /Info
+		health_interval 5s
+		health_timeout 2s
+		health_status 2xx
+	}
+}

@@ -1,0 +1,39 @@
+import numpy as np
+import time
+
+def test_operation(operation, dimension):
+    """Function to time how long a given operation takes with a specified matrix size."""
+    A = np.random.rand(dimension, dimension)
+    B = np.random.rand(dimension, dimension)
+
+    start_time = time.perf_counter()
+    operation(A, B)
+    elapsed_time = time.perf_counter() - start_time
+    return elapsed_time
+
+def main():
+    # Initial parameters for testing
+    operations = [
+        np.dot,  # Matrix multiplication
+        lambda A, B: np.linalg.matrix_power(A, 3),  # Matrix raised to the power of 3
+        lambda A, B: np.linalg.eig(A)  # Eigenvalues calculation
+    ]
+
+    found = False
+    dimension = 100
+    while not found:
+        for op in operations:
+            elapsed_time = test_operation(op, dimension)
+            print(f"Operation {op.__name__} with dimension {dimension}x{dimension} took {elapsed_time:.3f} seconds.")
+            if elapsed_time > 1:  # If the operation takes around 1 second, we consider it a good fit
+                print(f"Found suitable operation: {op.__name__} with dimension {dimension}x{dimension}")
+                found = True
+                return op, dimension
+
+        dimension += 50
+
+    return None, None
+
+if __name__ == "__main__":
+    main()
+

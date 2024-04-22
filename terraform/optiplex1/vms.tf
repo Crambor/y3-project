@@ -1,6 +1,7 @@
 locals {
   is_running = true
   is_running_ubuntu = false
+  is_running_pbs = false
 }
 
 resource "proxmox_vm_qemu" "slurm-vms" {

@@ -42,3 +42,19 @@ terraform.rc
 
 # ignore secrets
 .env
+
+# venv and other packages
+venv/
+*.tar.gz
+
+# binaries
+**/caddy
+**/hq
+**/load-balancer
+load-balancer
+
+# nfs client tempfiles
+.nfs*
+
+**/caddy-custom/
+**/timings

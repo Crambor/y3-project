@@ -1,0 +1,32 @@
+#!/bin/bash
+
+cd timings/slurm
+for num_jobs_dir in */; do
+    echo -e "\n"
+    for job_duration_dir in "$num_jobs_dir"*/; do
+        cd "$job_duration_dir" || continue
+
+        sum=0
+        count=0
+
+        for cn_file in cn*; do
+            if [ -f "$cn_file" ]; then
+                value=$(cat "$cn_file")
+                sum=$(echo "$sum + $value" | bc)
+                ((count++))
+            fi
+        done
+
+        if [ "$count" -ne 0 ]; then
+            average=$(echo "scale=3; $sum / $count" | bc)
+        else
+            average=0
+        fi
+
+        elapsed_time=$(cat elapsed_time)
+        echo -e "num_jobs: $num_jobs_dir \t job_duration: $job_duration_dir \t Average Time: $average \t Elapsed Time: $elapsed_time"
+
+        cd - > /dev/null
+    done
+done
+

@@ -1,0 +1,11 @@
+:4242 {
+    	reverse_proxy {
+        		to 10.10.10.12:13573 10.10.10.12:12318 10.10.10.12:31015 10.10.10.12:3038 10.10.10.12:48975
+        		lb_policy least_conn
+				lb_retries 2
+				health_uri /Info
+				health_interval 5s
+				health_timeout 2s
+				health_status 2xx
+    	}
+}
